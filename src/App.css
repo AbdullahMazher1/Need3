@@ -1,0 +1,2086 @@
+.Projects2 {
+  display: grid;
+  margin-top: 50px;
+  grid-template-columns: 1fr 1.5fr;
+}
+
+.Projects2Left {
+  margin: 100px;
+}
+
+.Projects2Next {
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+  place-content: center;
+  padding-top: 60px;
+}
+
+.MyProjects {
+  display: flex;
+  flex-direction: column;
+}
+
+.MyProjectsTop {
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.MyProjectsBottom {
+  margin-top: -20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.imgContainer1,
+.imgContainer2,
+.imgContainer3 {
+  text-align: center;
+  margin: 10px;
+  opacity: 0;
+  transition: 1s;
+}
+
+.imgContainer1 {
+  transition-delay: 0.5s;
+}
+
+.imgContainer2 {
+  transition-delay: 1s;
+}
+
+.imgContainer3 {
+  transition-delay: 1.5s;
+}
+
+.imgCaption,
+.imgCaption1 {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+.imProject1,
+.imProject,
+.imProject2 {
+  height: 250px;
+  width: 100%;
+  max-width: 250px;
+  object-fit: contain;
+  margin-bottom: -50px;
+}
+
+.imProject2 {
+  margin-top: -50px;
+}
+
+.Bars {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.MyBar {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.BarValue {
+  opacity: 0.7;
+  font-size: 14px;
+}
+
+.Bar {
+  height: 10px;
+  background-color: #cce2fc;
+  width: 500px;
+  border-radius: 4px;
+  border: #868686 solid 1px;
+}
+
+.BarText {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+.Project2Head {
+  font-size: 40px;
+}
+
+.Project2SubHead {
+  margin-top: 12px;
+  font-size: 25px;
+  color: rgb(18, 64, 104);
+  font-family: monospace;
+}
+
+.BarPercent1,
+.BarPercent2,
+.BarPercent3,
+.BarPercent4,
+.BarPercent5 {
+  height: 10px;
+  border-radius: 5px;
+  transition: 1s;
+  width: 0px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1024px) {
+  .Projects2 {
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+  }
+  
+  .Projects2Left {
+    margin: 50px;
+  }
+  
+  .Projects2Next {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Projects2 {
+    grid-template-columns: 1fr;
+  }
+
+  .Projects2Left {
+    margin: 30px;
+  }
+
+  .Projects2Next {
+    margin-right: 20px;
+  }
+
+  .imProject1, .imProject, .imProject2 {
+    height: 200px;
+    max-width: 200px;
+  }
+
+  .Project2Head {
+    font-size: 30px;
+  }
+
+  .Project2SubHead {
+    font-size: 20px;
+  }
+
+  .Bar {
+    height: 8px;
+  }
+  .BarPercent1, .BarPercent2, .BarPercent3, .BarPercent4, .BarPercent5{
+    height: 8px;
+  }
+  .BarValue{
+    padding-top: 2px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Projects2 {
+    grid-template-columns: 1fr;
+  }
+  .Projects2Next{
+    margin-top: -50px;
+    margin-bottom: 50px;
+  }
+
+  .Projects2Left {
+    margin: 20px;
+  }
+
+  .Projects2Next {
+    margin-right: 10px;
+  }
+
+  .imProject1, .imProject, .imProject2 {
+    height: 150px;
+    max-width: 150px;
+  }
+  .imgCaption, .imgCaption1{
+    margin-top: 20px;
+    font-size: 10px;
+  }
+  .MyProjectsBottom{
+    margin-top: 10px;
+  }
+
+  .Project2Head {
+    font-size: 24px;
+  }
+
+  .Project2SubHead {
+    font-size: 18px;
+  }
+
+  .Bar {
+    width: 320px;
+  }
+}
+
+
+/*------------------------------------Header-------------------------------*/
+.Navbar {
+  position: sticky;
+  background-color: white;
+  height: 90px;
+  border-bottom: 2px rgb(235, 235, 235) solid;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 1000;
+}
+
+.navbarleft {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.navbarName {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(20, 83, 165);
+}
+
+.navbarlinks {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.buttonpanel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbarbuttons {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  color: rgb(15, 44, 82);
+  transition: transform 0.1s;
+  margin-top: 10px;
+}
+
+.navbarbuttons:hover {
+  transform: scale(1.1);
+}
+
+.circle {
+  border-radius: 50%;
+  height: 7px;
+  width: 7px;
+  background-color: #205c80;
+  transition: opacity 0.2s;
+  opacity: 0;
+  margin-top: 5px;
+}
+
+.navbarnext {
+  display: flex;
+  gap: 5px;
+  margin-right: 20px;
+}
+
+.navbaricons {
+  cursor: pointer;
+  color:  rgb(10, 72, 122);
+  transition: 0.2s;
+}
+
+.navbarMenuIcon {
+  display: none;
+  cursor: pointer;
+  color: #124686;
+}
+.inconWhatsapp:hover{
+  transform: translateY(-5px);
+}
+.iconLinkdin:hover{
+  transform: translateY(-5px);
+}
+.iconInsta:hover{
+  transform: translateY(-5px);
+}
+.navbarPopup {
+  position: absolute;
+  top: 90px;
+  right: 20px;
+  background-color: white;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1001;
+  transition: 1s ease;
+}
+
+.navbarPopupButtons {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  color: rgb(15, 44, 82);
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+
+  .navbarleft,
+  .navbarlinks {
+      display: none;
+  }
+
+  .navbarnext {
+      display: flex;
+      order: -1;
+      margin-right: auto;
+
+  }
+
+  .navbarMenuIcon {
+      display: block;
+  }
+}
+
+
+
+/*------------------------------Component 2-Slider--------------------------*/
+.carousel-item {
+  display: none;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+}
+
+.SliderBack {
+  background-color: rgb(18, 76, 122);
+}
+
+.carousel-item.active {
+  display: block;
+  opacity: 1;
+}
+
+.fade-in {
+  animation: fadeIn 1s;
+}
+
+.fade-out {
+  animation: fadeOut 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0.5;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0.5;
+  }
+}
+
+.animate {
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.WebSlide {
+  display: grid;
+  grid-template-columns: 45% 50%;
+  background-color: rgb(18, 76, 122);
+  min-height: 600px; /* Ensure consistent minimum height */
+  transition: transform 1s ease-out;
+}
+
+.WebSlideSubHead {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.WebSliderPara {
+  text-align: justify;
+}
+
+.HeaderContainer:hover .ImWebSlide {
+  transform: scale(1.1);
+}
+
+.WebSlideItemLeft {
+  color: aliceblue;
+  margin-top: 150px;
+  display: grid;
+  grid-template-rows: 12% 10% 80%;
+  margin-left: 150px;
+  justify-content: center;
+  transition: transform 1s ease-out;
+}
+
+.ImWebSlide:hover {
+  transform: scale(1.1);
+}
+
+.ImWebSlide {
+  max-height: 500px; /* Limit the image height */
+  width: auto; /* Maintain aspect ratio */
+  transition: 0.5s ease-out;
+}
+
+.WebSlideItemNext {
+  display: flex;
+  align-items: center;
+  place-content: center;
+  height: 100%; /* Ensure consistent height */
+}
+
+.SoftSlide {
+  max-height: 500px; /* Limit the image height */
+  object-fit: contain;
+  transition: 0.5s ease-out;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .WebSlide {
+    grid-template-columns: 1fr;
+    height: auto;
+    min-height: 600px; /* Ensure consistent minimum height */
+  }
+
+  .WebSlideItemLeft {
+    margin-left: 0;
+    margin-top: 20px;
+    grid-template-rows: auto auto auto;
+  }
+
+  .ImWebSlide {
+    height: auto;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .WebSlide {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    min-height: 600px; /* Ensure consistent minimum height */
+  }
+
+  .WebSlideItemLeft {
+    margin-left: 0;
+    margin-top: 20px;
+    grid-template-rows: auto auto auto;
+  }
+
+  .ImWebSlide {
+    max-height: 500px; /* Limit the image height for this screen size */
+    width: 100%;
+    margin: 0;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .WebSlideItemNext{
+    display: flex;
+    align-items: center;
+    place-content: center;
+    margin-left: -25px;
+  }
+  .WebSlide {
+    grid-template-columns: 1.2fr;
+    padding: 10px;
+    min-height: 600px; /* Ensure consistent minimum height */
+  }
+
+  .WebSlideHead {
+    font-weight: 800;
+    font-size: larger;
+  }
+
+  .WebSlideSubHead,
+  WebSlideSubHead {
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  .WebSlideItemLeft {
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-right: 10px;
+    grid-template-rows: auto auto auto;
+  }
+
+  .ImWebSlide {
+    max-height: 260px; /* Adjust image height for smaller screens */
+    width: auto;
+    margin-left: 30px;
+    object-fit: contain;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .WebSliderPara {
+    margin-top: -5px;
+    font-size: 12px;
+  }
+}
+
+/*------------------------------Component 3-About US-------------------------*/
+.Container {
+  margin: 50px;
+  display: grid;
+  grid-template-columns: 80px 600px 600px 30px;
+  background-color: rgb(255, 255, 255);
+  height: 450px;
+}
+
+.icon {
+  width: 350px;
+  height: 350px;
+  object-fit: contain;
+  transition: transform 0.5s;
+}
+
+.AboutHeading {
+  font-size: 45px;
+}
+
+.AboutSubHeading {
+  font-size: 25px;
+  color: rgb(18, 64, 104);
+}
+
+.AboutPara {
+  font-size: 18px;
+  opacity: 0.9;
+  text-align: justify;
+}
+
+.itemleft {
+  margin-top: 60px;
+  display: grid;
+  grid-template-rows: 67px 55px 100px;
+}
+
+.itemright {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  place-content: center;
+}
+
+.itemright:hover .icon {
+  transform: scale(1.05);
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .Container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: auto;
+  }
+
+  .icon {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+
+  .itemleft {
+    margin-top: 20px;
+    grid-template-rows: auto;
+  }
+
+  .itemright {
+    margin-top: 20px;
+    grid-template-rows: auto;
+  }
+
+  .AboutHeading {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .AboutSubHeading {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .AboutPara {
+    text-align: justify;
+    opacity: 0.8;
+  }
+}
+
+@media (max-width: 768px) {
+  .Container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: auto;
+  }
+
+  .icon {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    margin-bottom: 20px;
+  }
+
+  .itemleft {
+    margin-top: 10px;
+    grid-template-rows: auto;
+  }
+
+  .itemright {
+    margin-top: 10px;
+    grid-template-rows: auto;
+  }
+
+  .AboutHeading {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .AboutSubHeading {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .AboutPara {
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: justify;
+  }
+  .itemright{
+    display: flex;
+    align-items: center;
+    place-content: center;
+  }
+}
+
+/* --------------------Component 4- All Services------------------- 4 */
+.ServiveContainer {
+  margin-top: 0px;
+  background-color: rgb(18, 76, 122);
+  display: grid;
+  grid-template-rows: auto auto;
+  height: auto;
+  padding-bottom: 50px;
+}
+
+.ServicesTop {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 40px;
+}
+
+.Service01,
+.Servive02,
+.Service03 {
+  margin: 25px;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  padding-top: 20px;
+  background-color: rgb(249, 250, 255);
+  display: flex;
+  flex-direction: column;
+  height: 380px;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.WebService:hover .Web {
+  transform: translateY(-15px);
+  rotate: 10deg;
+}
+
+.iosDervice:hover .ios {
+  transform: translateY(-15px);
+  rotate: 10deg;
+}
+
+.SoftService:hover .soft {
+  transform: translateY(-15px);
+  rotate: 10deg;
+}
+
+.WrodpressService:hover .wordpress {
+  transform: translateY(-15px);
+  rotate: 10deg;
+}
+
+.DServices:hover .Graphic {
+  transform: translateY(-15px);
+  rotate: 10deg;
+}
+
+.ProducServices:hover .product {
+  transform: translateY(-15px);
+  rotate: 10deg;
+}
+
+.WebPara {
+  padding: 20px;
+  padding-left: 30px;
+  padding-right: 20px;
+  opacity: 0.9;
+  font-size: 13px;
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.5s ease-out;
+}
+
+.ServiceHead {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.WebIcon {
+  height: 50px;
+  width: 50px;
+  margin-top: 50px;
+  object-fit: contain;
+  transition: 0.2s ease-out;
+}
+
+.Graphic {
+  height: 45px;
+  width: 45px;
+  object-fit: contain;
+}
+
+.Web {
+  height: 55px;
+  width: 55px;
+  object-fit: contain;
+}
+
+.ReadMore {
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+@media (max-width: 720px) {
+  .ServicesTop {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+}
+
+/*---------------------------------Profile------------------------------*/
+.Experience {
+  margin-bottom: 100px;
+}
+
+.Experience1 {
+  padding-top: 100px;
+}
+
+.Experience2 {
+  margin-top: -50px;
+}
+
+.ProfileContainer {
+  padding-left: 200px;
+  padding-right: 200px;
+  display: grid;
+  grid-template-rows: 20px 225px 10px;
+}
+
+.ProfileHead {
+  color: rgb(10, 72, 122);
+  font-family: sans-serif;
+  letter-spacing: 2px;
+}
+
+.ProfileLine {
+  background-color: rgb(192, 192, 192);
+  opacity: 0.5;
+}
+
+.Company1 {
+  display: grid;
+  grid-template-columns: 0.21fr 1fr;
+}
+
+.ImCharcoal {
+  margin-top: 5px;
+  padding: 5px;
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  border: 1px solid rgb(175, 175, 175);
+}
+
+.Company1Next {
+  display: grid;
+  grid-template-rows: 45px 30px 25px 30px 30px;
+  padding-left: 20px;
+}
+
+.Company1Duration {
+  opacity: 0.8;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Company1Location {
+  opacity: 0.8;
+}
+
+.Company1Discp {
+  text-align: justify;
+}
+
+@media (max-width: 1200px) {
+  .ProfileContainer {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media (max-width: 992px) {
+  .ProfileContainer {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .Company1 {
+    grid-template-columns: 0.3fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .ProfileContainer {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .Company1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .ImCharcoal {
+    width: 150px;
+    height: 150px;
+  }
+
+  .Company1Next {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .ProfileContainer {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .ImCharcoal {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+
+  .Experience1 {
+    padding-top: 50px;
+    padding-left: 5px;
+    padding-right: 10px;
+  }
+
+  .Experience2 {
+    margin-top: 0;
+    padding-left: 5px;
+    padding-right: 10px;
+  }
+
+  .Company1Head {
+    font-size: 25px;
+  }
+
+  .Company1Name {
+    margin-top: -10px;
+  }
+
+  .Company1Discp {
+    font-size: 15px;
+  }
+
+  .Company1Discp {
+    font-size: 13px;
+  }
+}
+
+/* --------------------Component 5- Web & Software Service------------------- 4 */
+.ServiceContainer {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  background-color: rgb(234, 243, 247);
+  height: 450px;
+}
+.ServiceItemRight{
+  display: flex;
+  align-items: center;
+  place-content: center;
+}
+
+.WebParaDiscription {
+  text-align: justify;
+}
+
+.ServiceItemleft {
+  margin-top: 100px;
+  margin-left: 140px;
+  display: grid;
+  grid-template-rows: 50px 35px 100px;
+}
+
+.MobileItemRight {
+  margin-top: 100px;
+  margin-left: 100px;
+  display: grid;
+  grid-template-rows: 50px 35px 100px;
+}
+
+.ImWebService {
+  transition: 0.5s ease-out;
+  height: 450px;
+  width: 450px;
+  object-fit: contain;
+}
+
+.ImMobileService {
+  height: 450px;
+  width: 450px;
+  object-fit: contain;
+}
+
+@media (max-width: 480px) {
+  .ServiceContainer {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .ServiceItemleft {
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .WebParaDiscription {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .WebHead {
+    margin-left: 35px;
+    font-size: 36px;
+  }
+
+  .WebSubHead {
+    margin-left: 55px;
+    font-size: 20px;
+  }
+
+  .ImWebService {
+    margin-left: 20px;
+    height: 320px;
+    width: 320px;
+    object-fit: contain;
+  }
+}
+
+/* --------------------Component 6- Mobile Service-------------------  */
+
+.MobileServoceContainer {
+  display: grid;
+  grid-template-columns: 42% 50%;
+  height: 470px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.MobileServoceContainer:hover .MobileItemRight {
+  right: 0;
+}
+
+.ImDesjtopService {
+  margin-left: 175px;
+  margin-top: 20px;
+  height: 400px;
+  width: 400px;
+  object-fit: contain;
+  transition: 0.5s ease-out;
+}
+
+.ImMobileService {
+  margin-top: -30px;
+  margin-left: 110px;
+
+}
+
+.MobilePara {
+  text-align: justify;
+}
+
+.MobileItemRight {
+  margin-left: 130px;
+  transition: right 0.4s;
+}
+
+.MobileItemLeft {
+  transition: 0.5s ease-out;
+}
+.MobileItemLeft{
+  display: flex;
+  align-items: center;
+  place-content: center;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .MobileServoceContainer {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .MobileServiceHead {
+    font-size: 35px;
+  }
+
+  .MobileSubHead {
+    font-size: 30px;
+  }
+
+  .ImDesjtopService,
+  .ImMobileService {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+
+  .MobileItemRight {
+    text-align: center;
+  }
+
+  .MobilePara {
+    margin-left: 30px;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .MobileServoceContainer {
+    height: auto;
+  }
+
+  .MobileItemRight {
+    text-align: center;
+  }
+
+  .MobileSubHead {
+    font-size: 30px;
+  }
+
+  .MobilePara {
+    margin-left: 30px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
+
+  .DesktopSubHead {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .ServiceItemRight{
+    display: flex;
+    align-items: center;
+    place-content: center;
+  }
+  .ImDesjtopService,
+  .ImMobileService {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    margin-top: -90px;
+    margin-left: 30px;
+  }
+
+  .ImDesjtopService {
+    margin-left: 17%;
+    margin-top: -50px;
+    height: 260px;
+    width: 260px;
+    object-fit: contain;
+    transition: 1s ease-out;
+  }
+
+  .MobileItemRight {
+
+    margin: 50px 5px;
+    text-align: center;
+  }
+
+  .MobileSubHead {
+    font-size: 20px;
+  }
+
+  .DesktopSubHead {
+    font-size: 20px;
+  }
+
+  .MobilePara {
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+}
+
+/* --------------------Component 7- Workflow-------------------  */
+.WorkflowContainder {
+  display: grid;
+  grid-template-rows: 0.1fr 0.1fr 0.2fr;
+  height: auto;
+  background-color: rgb(223, 242, 243);
+}
+
+.ImWorkflow {
+  height: 800px;
+  width: 800px;
+  object-fit: contain;
+  transition: 0.5s ease-out;
+  opacity: 1;
+  margin-left: 200px;
+}
+
+.WorkflowHead {
+  margin-top: 50px;
+  place-self: center;
+  margin-left: 250px;
+  letter-spacing: 7px;
+  transition: 0.5s;
+}
+
+.WorkflowsubHead {
+  margin-top: 150px;
+  color: gray;
+  margin-left: 27.5%;
+  transition: ease-out 1s;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .WorkflowContainder {
+    height: auto;
+    padding: 20px;
+  }
+
+  .ImWorkflow {
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    height: auto;
+  }
+
+  .WorkflowHead {
+    margin-left: 0;
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+  .WorkflowsubHead {
+    margin-left: 0;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .WorkflowContainder {
+    height: auto;
+    padding: 10px;
+  }
+
+  .ImWorkflow {
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+  }
+
+  .WorkflowHead {
+    margin-left: 0;
+    text-align: center;
+    font-size: 1.2em;
+  }
+
+  .WorkflowsubHead {
+    margin-left: 0;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1em;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .WorkflowContainder {
+    margin-top: 50px;
+    height: auto;
+  }
+
+  .ImWorkflow {
+    width: 350px;
+    height: 350px;
+    object-fit: contain;
+    margin-left: 10px;
+  }
+
+  .WorkflowHead {
+    margin-top: 20px;
+    margin-left: 0;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1em;
+  }
+
+  .WorkflowsubHead {
+    margin-top: 20px;
+    margin-left: 0;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 0.9em;
+  }
+}
+
+/* --------------------Component 8-Analyics-------------------  */
+.AnalyticsContainer {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
+}
+
+.AnalyticsUpperContainer {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1.35fr;
+}
+
+.AnalyticsLeft, .AnalyticsNext {
+  display: flex;
+  height: 200px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.AnalyticsPara {
+  justify-content: center;
+  margin: 0 15%;
+  text-align: justify;
+}
+
+.AnalyticsSubHead {
+  margin-left: -140px;
+}
+
+.AnalyticsHead {
+  margin-left: 22%;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 5px;
+  font-weight: 600;
+  color: #152F4F;
+}
+
+.AnalyticsValue {
+  font-weight: 300;
+}
+
+.AnalyticsC1:hover,
+.AnalyticsC2:hover,
+.AnalyticsC3:hover,
+.AnalyticsC4:hover,
+.AnalyticsC5:hover {
+  background-color: #cce2fc;
+}
+
+.AnalyticsBottomContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.AnalyticsText{
+  font-family: 'Verdana';
+  color: #555555;
+}
+.AnalyticsValue{
+  font-weight: 500;
+  font-size: 45px;
+  color: #093542;
+}
+.BottomUp {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 70px;
+  margin-top: 50px;
+}
+
+@media (max-width: 1200px) {
+  .AnalyticsContainer {
+    grid-template-rows: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .AnalyticsUpperContainer {
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+  }
+
+  .AnalyticsLeft {
+    margin-left: 0;
+  }
+
+  .AnalyticsHead {
+    margin-left: 0;
+    font-size: 20px;
+  }
+
+  .AnalyticsPara {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .AnalyticsUpperContainer {
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+  }
+
+  .AnalyticsLeft, .AnalyticsNext {
+    height: auto;
+  }
+
+  .AnalyticsHead {
+    margin-left: 32px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .AnalyticsPara {
+    font-size: 13px;
+    margin-top: 5px;
+    margin-left: 35px;
+  }
+
+  .AnalyticsBottomContainer {
+    margin-bottom: 50px;
+  }
+
+  .BottomUp {
+    margin-top: 30px;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .AnalyticsValue {
+    font-size: 45px;
+  }
+
+  .AnalyticsText {
+    font-size: 14px;
+    opacity: 0.8;
+  }
+}
+
+
+
+/* --------------------Component 9-Project-------------------  */
+.ProjectContainer {
+  background-color: rgb(18, 76, 122);
+  text-align: center;
+  display: grid;
+  grid-template-rows: 10px auto auto auto auto auto;
+  padding: 20px;
+}
+
+.ProjectLine {
+  margin-top: 50px;
+}
+
+.Line {
+  background-color: azure;
+}
+
+.ProjectHead {
+  color: whitesmoke;
+  letter-spacing: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  transition: 1s ease-out;
+  opacity: 0;
+}
+
+
+.ProjectButtons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 20px;
+  margin-bottom: -40px;
+}
+
+.ProjectDisplayContainer {
+  background-color: rgb(8, 36, 58);
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: justify;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.ProjectImContainer {
+  background-color: rgb(182, 220, 253);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ImProject {
+  height: 300px;
+  width: 300px;
+  object-fit: contain;
+}
+
+.ProjectDiscription {
+  color: white;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 16px;
+  transition: 1s;
+  text-align: justify;
+}
+
+.Project1,
+.Project2,
+.Project3,
+.Project4,
+.Project5 {
+  background-color: transparent;
+  border: none;
+  color: rgb(254, 255, 255);
+  font-weight: 400;
+  font-family: 'Courier New', Courier, monospace;
+  border: solid #e3edf8 1px;
+  border-radius: 5px;
+  height: 40px;
+  width: 100%;
+  max-width: 190px;
+  margin: 15px auto;
+  transition: transform 0.3s;
+}
+
+.Project1:hover,
+.Project2:hover,
+.Project3:hover,
+.Project4:hover,
+.Project5:hover {
+  background-color: rgb(5, 26, 70);
+  transform: scale(1.05);
+}
+
+.ProjectDisplayContainer1 {
+  display: grid;
+  grid-template-rows: 100px auto;
+  background-color: #152F4F;
+}
+
+.ProjectDisplayDicp {
+  color: #e3edf8;
+  margin: 30px;
+}
+
+.ProjectHeadin {
+  color: aliceblue;
+  margin-top: 80px;
+  margin-left: 30px;
+}
+
+@media (min-width: 768px) {
+  .ProjectDisplayContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .ImProject {
+    margin: 80px auto 30px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .ProjectContainer {
+    margin-top: 50px;
+    padding: 10px;
+  }
+
+  .Project1,
+  .Project2,
+  .Project3,
+  .Project4,
+  .Project5 {
+    width: 170px;
+    font-size: 14px;
+  }
+
+  .ProjectHeadin {
+    margin-top: 5px;
+    margin-left: 20px;
+  }
+
+  .ProjectDisplayContainer1 {
+    display: grid;
+    grid-template-rows: 20px 250px
+  }
+
+  .ProjectDiscription {
+    text-align: justify;
+    font-size: 13px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .ImProject {
+    padding: 40px;
+  }
+
+  .ProjectHead {
+    font-size: 18px;
+    margin-top: 50px;
+    letter-spacing: 4px;
+    margin-left: 1px;
+  }
+
+  .ProjectContainer:hover .ProjectHead {
+    font-size: 18px;
+    margin-top: 50px;
+    letter-spacing: 4px;
+    word-spacing: 0px;
+  }
+
+  .ProjectButtons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: -50px;
+  }
+
+  .ProjectDisplayDicp {
+    font-size: 14px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+
+/* --------------------Component 10-Profile-------------------  */
+.ProfileContainer {
+  margin-top: 50px;
+  display: grid;
+  grid-template-rows: 0.5fr 0.5fr;
+  background-color: rgb(243, 250, 253);
+  height: auto;
+}
+
+.ProfileItemLeft {
+  margin-top: 100px;
+  opacity: 1;
+  transition: 0.5s ease-out;
+}
+
+.ProfileHead2 {
+  text-align: justify;
+}
+
+.ProfileButton2 {
+  margin-top: 10px;
+  background-color: transparent;
+  border-radius: 5px;
+  background-color: aliceblue;
+  font-family: 'Courier New', Courier, monospace;
+  height: 35px;
+}
+
+.ProfileButton2:hover {
+  background-color: #152F4F;
+  color: #cce2fc;
+  border: solid white 3px;
+}
+
+.ProfileHead1 {
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.ProfileItemNext {
+  display: grid;
+  grid-template-rows: 0.1fr;
+  place-items: center;
+  align-items: center;
+  background-color: rgb(243, 250, 253);
+}
+
+.ImProfile {
+  width: 700px;
+  height: 700px;
+  margin-top: 150px;
+  object-fit: contain;
+  transition: 0.5s ease-out;
+  opacity: 0;
+  place-self: center;
+}
+
+@media (max-width: 480px) {
+  .ProfileContainer {
+    place-items: center;
+  }
+
+  .ProfileItemLeft {
+    margin-left: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: 0px;
+  }
+
+  .ProfileHead3 {
+    margin-right: 30px;
+    font-size: 35px;
+    font-weight: 700;
+    color: #17355a;
+  }
+
+  .profileHead2 {
+    text-align: justify;
+    font-size: 13px;
+    margin-right: 40px;
+  }
+
+  .ProfileContainer:hover .Taptoview {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .ProfileItemNext:hover .Taptoview1 {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .ImProfile {
+    margin-top: 120px;
+    height: 350px;
+    width: 350px;
+    object-fit: contain;
+  }
+
+}
+
+/* --------------------Component 11-Values-------------------  */
+.ValuesContainer {
+  height: 700px;
+  display: grid;
+  grid-template-rows: 150px auto;
+  border: solid rgb(237, 243, 253);
+  border-width: 2px;
+  padding: 20px;
+  overflow: hidden;
+  margin-top: 200px;
+}
+
+.Valuesline {
+  color: #08203d;
+  height: 1px;
+}
+
+.ValuesUpperContainer {
+  display: grid;
+  grid-template-rows: 0.5fr 0.1fr;
+  margin-top: 25px;
+  font-size: 30px;
+  font-weight: 400;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Impact';
+  color: rgb(228, 242, 253);
+  letter-spacing: 10px;
+}
+
+.ValuesOUR {
+  color: #1c5eaf;
+}
+
+.ValuesBottomContainer {
+  margin-top: 40px;
+  font-size: 50px;
+  margin-bottom: 100px;
+  margin-left: 19%;
+  margin-right: 12%;
+  letter-spacing: 5px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(38, 83, 143);
+  transition: 2s ease-out;
+  text-align: center;
+  position: relative;
+}
+
+.slide-in {
+  animation: slideIn 1s forwards;
+}
+
+.slide-out {
+  animation: slideOut 1s forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .ValuesContainer {
+    height: 600px;
+  }
+
+  .ValuesUpperContainer {
+    font-size: 18px;
+  }
+
+  .ValuesBottomContainer {
+    font-size: 20px;
+    margin-left: 10%;
+  }
+  .ValuesOUR{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 900;
+  }
+}
+
+
+
+/*--------------------Component 13-Footer-----------------*/
+.footer {
+  background: #152F4F;
+  color: white;
+
+  .links {
+    ul {
+      list-style-type: none;
+    }
+
+    li a {
+      color: white;
+      transition: color .2s;
+
+      &:hover {
+        text-decoration: none;
+        color: #4180CB;
+      }
+    }
+  }
+
+
+  .about-company {
+    i {
+      font-size: 25px;
+    }
+
+    a {
+      color: white;
+      transition: color .2s;
+
+      &:hover {
+        color: #4180CB
+      }
+    }
+  }
+
+  .location {
+    i {
+      font-size: 18px;
+    }
+
+    margin-top: 30px;
+  }
+
+  .copyright p {
+    border-top: 1px solid rgba(255, 255, 255, .1);
+  }
+}
+
+/*-----------------------------------NEW PROJECTS-----------------------------------*/
+
+.NewProjectSubHead {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.NewProjectsHead {
+  font-weight: 700;
+  color: #17365c;
+  letter-spacing: 2px;
+}
+
+.Newprojects {
+  display: grid;
+  background-color: rgb(234, 243, 247);
+  height: auto;
+  grid-template-rows: auto auto;
+  padding: 20px;
+}
+
+.ProjectsPara {
+  text-align: justify;
+}
+
+.ProjectsUpper {
+  margin: 12%;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.NewProjectsBottom {
+  height: 410px;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: grid;
+  margin-top: 70px;
+  grid-template-columns: 0.5fr 1fr;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  background-color: white;
+  border: 1px #08203d solid;
+  opacity: 0;
+  transition: 1s ease-out;
+}
+
+
+.ImProjectDisplay {
+  border-radius: 5px;
+  margin-left: 17px;
+  margin-right: 15px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  width: 95%;
+  object-fit: contain;
+}
+
+.Improjectlo {
+  height: 30px;
+  width: 30px;
+  object-fit: contain;
+}
+
+.NewProjectType {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.ProjectsDisplayLeft {
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.Navigateicons {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.ProjectCircles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 4px;
+}
+
+.circle1,
+.circle2,
+.circle3 {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #08203d;
+  transition: 0.2s ease-out;
+}
+
+.Newprojectdiscprition {
+  margin: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.NewProjectTitle {
+  margin-top: 5px;
+  margin-left: 10px;
+  color: #cce2fc;
+}
+
+.NewProjectViewButton:hover {
+  background-color: #08203d;
+  color: #e3edf8;
+}
+
+.NewProjectViewButton {
+  margin: 15px;
+  padding: 5px;
+  background-color: transparent;
+  font-family: 'Courier New', Courier, monospace;
+  border-radius: 5px;
+  border: 1px black solid;
+}
+
+.ProjectsDisplayNext {
+  background-color: #08203d;
+  display: grid;
+  grid-template-rows: 20px auto;
+}
+
+@media (max-width: 768px) {
+  .NewProjectsBottom {
+    grid-template-columns: 1fr;
+    margin: 5%;
+  }
+
+  .ImProjectDisplay {
+    width: 100%;
+  }
+
+  .ProjectsUpper {
+    margin: 5%;
+  }
+
+  .NewProjectsHead {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ProjectsUpper {
+    margin: 5%;
+  }
+
+  .NewProjectsBottom {
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 70px;
+  }
+
+  .ProjectsPara {
+    font-size: 13px;
+  }
+
+  .ImProjectDisplay {
+    margin-top: 15px;
+    margin-left: 8px;
+    width: 95%;
+  }
+
+  .NewProjectsHead {
+    letter-spacing: 0px;
+    font-size: 20px;
+  }
+
+  .ProjectsDisplayLeft {
+    margin: 10px;
+  }
+
+  .Newprojectdiscprition {
+    font-size: 12px;
+  }
+
+  .NewProjectTitle {
+    font-size: 18px;
+  }
+}

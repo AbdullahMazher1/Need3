@@ -1,0 +1,14 @@
+                <div className='Navigateicons'>
+                        <div style={{ display: 'flex', justifyContent: 'center', gap: '10px', padding: '10px' }}>
+                            <button>
+                                <FaChevronLeft size={25} color='black' />
+                            </button>
+
+                        </div>
+                        <div style={{ display: 'flex', justifyContent: 'center', gap: '10px', padding: '10px' }}>
+                            <button>
+                                <FaChevronRight size={25} color='black' />
+                            </button>
+
+                        </div>
+                    </div>
